@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		.abc{
+			color:green;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<!-- <body style="background-color: orange"> -->
+		<div align="center">
+			<h1>Registration Form</h1>
+			<form method="post" action="">
+					<input type="text" placeholder="Enter Your Name" size="25" id="nm">
+					<br><br>
+					<input type="text" placeholder="Enter Age" size="25" id="age">
+					<br><br>
+					<input type="email" placeholder="Enter Your Email ID" size="25" id="email">
+					<br><br>
+					<input type="button" value="REGISTER" onclick="userDetails()">
+			</form>
+			<div id="data" class="abc"></div>
+				<script type="text/javascript">
+					function userDetails()
+					{
+					var userName = document.getElementById("nm").value;
+					var userAge = document.getElementById("age").value;
+					var userEmail = document.getElementById("email").value;
+					document.getElementById('data').innerHTML = "<h1> Name:"+userName+"<br> Age:"+userAge+"<br> Email ID:" +userEmail+"</h1>";
+					/*document.getElementById('data').innerHTML = "<h1>Age: "+userAge;
+					document.getElementById('data').innerHTML = "<h1>Name: "+userEmail;*/
+					}
+				</script>
+		</div>
+
+</body>
+</html>
